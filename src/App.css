@@ -1,8 +1,30 @@
 .text-heading{
-  font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-  font-weight: 500;
+font-family: 'Philosopher', sans-serif;
+color: #171515;
+
 }
 
 .text-grey{
   color: #aaa08a;
+}
+
+.letter-spacing{
+  letter-spacing: 0.5rem;
+}
+
+.header-hero, .default-hero{
+  min-height: calc(100vh - 67px);
+  background: url('./images/4.png') center/cover no-repeat;
+}
+
+.default-hero{
+  background: url('./images/2.jpg') center/cover no-repeat;
+}
+
+.margin{
+  margin-top: 2rem;
+}
+
+.mt-Z{
+  margin-top:22rem;
 }
