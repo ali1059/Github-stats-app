@@ -4,8 +4,8 @@ color: #171515;
 
 }
 
-.text-grey{
-  color: #aaa08a;
+.text-white{
+  color: #fff;
 }
 
 .letter-spacing{
@@ -27,4 +27,8 @@ color: #171515;
 
 .mt-Z{
   margin-top:22rem;
+}
+
+.mini-text{
+  font-size: 1.25rem;
 }
