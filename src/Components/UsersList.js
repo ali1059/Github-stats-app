@@ -3,11 +3,13 @@ import User from './User';
 export default class UsersList extends Component{
 
   render(){
+    console.log(this.props);
     const {Users} = this.props;
+    console.log(Users);
     return(
       <>
       <div className='container py-5'>
-      
+
         <div className='row'>
          <div className='col-10 mx-auto col-md-8 mb-3 text-center text-capitalize'>
           <h1 className='text-heading'>Users with most followers and repositories </h1>
