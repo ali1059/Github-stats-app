@@ -31,8 +31,19 @@ const url = `https://api.github.com/users/${this.state.username}`;
   }
 
   render(){
-    const {login, avatar_url,html_url,repos_url,name,company,blog,location,public_repos,public_gists,
-    followers,following,created_at,updated_at } = this.state.details;
+
+const {...items} = this.state.details;
+Object.keys(items).map(function(key, index) {
+  if(items[key] == null){
+  items[key] = 'Not provided';
+}
+});
+
+const {login, avatar_url,html_url,repos_url,name,company,blog,location,public_repos,
+followers,following,created_at,updated_at } = items;
+
+
+
 
     if(this.state.loading){
       return(

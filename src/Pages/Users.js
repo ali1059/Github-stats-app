@@ -11,7 +11,7 @@ export default class Users extends Component{
 }
 
 state=({
-  users:usersData,
+  users:[],
   search:'',
   url:'https://api.github.com/search/users?q=repos:>100+followers:>10000',
   error:''
