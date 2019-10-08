@@ -32,6 +32,8 @@ const url = `https://api.github.com/users/${this.state.username}`;
 
   render(){
 
+var repoUrl = `https://github.com/${this.state.username}?tab=repositories`;
+
 const {...items} = this.state.details;
 Object.keys(items).map(function(key, index) {
   if(items[key] == null){
@@ -56,6 +58,7 @@ followers,following,created_at,updated_at } = items;
         </div>
       );
     }
+
     return(
       <div className='container my-3'>
        <div className='row'>
@@ -67,7 +70,7 @@ followers,following,created_at,updated_at } = items;
             rel='noopener noreferrer'
             className='btn btn-danger my-3 ml-cus '
          >Profile Url</a>
-         <a href={html_url}
+         <a href={repoUrl}
             target='_blank'
             rel='noopener noreferrer'
             className='btn btn-danger my-3 ml-4'
